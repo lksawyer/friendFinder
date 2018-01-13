@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <form method="post">
+      <h3><strong>About You</strong></h3>
+      <div class="form-group">
+        <label for="name">Name (Required)</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="photo">Link to Photo Image (Required)</label>
+        <input type="text" class="form-control" id="photo">
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 1</strong></h3>
+        <h4>You like dogs</h4>
+        <select id = "q1">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 2</strong></h3>
+        <h4>You like cats</h4>
+        <select id = "q2">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 3</strong></h3>
+        <h4>You like hot dogs</h4>
+        <select id = "q3">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 4</strong></h3>
+        <h4>You like burgers</h4>
+        <select id = "q4">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 5</strong></h3>
+        <h4>You like video games</h4>
+        <select id = "q5">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 6</strong></h3>
+        <h4>You like movies</h4>
+        <select id = "q6">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 7</strong></h3>
+        <h4>You like the beach</h4>
+        <select id = "q7">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 8</strong></h3>
+        <h4>You like the lake</h4>
+        <select id = "q8">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 9</strong></h3>
+        <h4>You like cars</h4>
+        <select id = "q9">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <h3><strong>Question 10</strong></h3>
+        <h4>You like trucks</h4>
+        <select id = "q10">
+          <option selected disabled>Select an Option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <br>    
+    </form>
+    <button id="submit" class="btn btn-default">Submit</button>  
+    <br>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a> 
+      </div>
+    </footer>
+
+    <div id="myModal" class="modal fade" role="dialog" data-toggle="modal">
+      <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+  $("#submit").on("click", function() {
+    
+    var newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      scores: JSON.stringify([
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q6").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()
+      ])
+
+    };
+
+    var currentURL = window.location.origin;
+
+    $.post(currentURL + '/api/friends', newFriend, function(data) {
+
+      console.log(data);
+      $('#myModal').modal('toggle');
+
+
+
+    });
+
+  });
+  
+</script>
